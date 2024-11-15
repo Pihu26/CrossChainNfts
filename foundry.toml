@@ -2,5 +2,15 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = [
+    "@chainlink/contracts-ccip/=lib/ccip/contracts/",
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "@chainlink/contracts/=lib/chainlink/contracts/",
+]
+solc = "0.8.20"
+[rpc_endpoints]
+ethSepolia = "${RPC_URL_SEPOLIA}"
+polAmoy = "${RPC_URL_POLYGON}"
+
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
